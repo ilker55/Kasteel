@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<KasteelContext>(opt => opt.UseInMemoryDatabase("kasteel"));
+builder.Services.AddScoped<IKingRepository, KingRepository>();
 
 var app = builder.Build();
 
