@@ -1,0 +1,167 @@
+[
+  {
+    "Id": 1,
+    "CastleId": 1,
+    "Name": "Baronet Barda",
+    "BirthDate": "01-01-1875",
+    "DeathDate": "15-06-1942",
+    "Location": "Limburg",
+    "Year": 1900,
+    "FamousFor": "Bekend om zijn dapperheid tijdens de Slag van Baarlo",
+    "Remarks": "Eerste baron van het Barda-geslacht"
+  },
+  {
+    "Id": 2,
+    "CastleId": 2,
+    "Name": "Viscount Tobey",
+    "BirthDate": "15-04-1285",
+    "DeathDate": "02-11-1355",
+    "Location": "Limburg",
+    "Year": 1322,
+    "FamousFor": "Bekend om het herstellen van de banden met naburige landen na een langdurig conflict",
+    "Remarks": "Een geleerd en diplomatiek heerser"
+  },
+  {
+    "Id": 3,
+    "CastleId": 2,
+    "Name": "Reeve Wymarc",
+    "BirthDate": "10-06-402",
+    "DeathDate": "25-12-507",
+    "Location": "Limburg",
+    "Year": 453,
+    "FamousFor": "Bekend om zijn rechtvaardige regering en het stimuleren van landbouw en handel",
+    "Remarks": "Een van de meest geliefde heersers in de geschiedenis van het koninkrijk"
+  },
+  {
+    "Id": 4,
+    "CastleId": 3,
+    "Name": "Emperor Barnabe",
+    "BirthDate": "12-11-280",
+    "DeathDate": "20-09-356",
+    "Location": "Limburg",
+    "Year": 321,
+    "FamousFor": "Bekend om het verenigen van verschillende vorstendommen tot een groot rijk",
+    "Remarks": "Groots en visionair leider"
+  },
+  {
+    "Id": 5,
+    "CastleId": 4,
+    "Name": "Chancellor Faremanne",
+    "BirthDate": "30-09-825",
+    "DeathDate": "10-03-960",
+    "Location": "Limburg",
+    "Year": 900,
+    "FamousFor": "Bekend om zijn wijsheid en rechtvaardige wetgeving",
+    "Remarks": "Een van de meest gerespecteerde kanseliers in de geschiedenis"
+  },
+  {
+    "Id": 6,
+    "CastleId": 5,
+    "Name": "Squire Oton",
+    "BirthDate": "03-07-1520",
+    "DeathDate": "28-11-1584",
+    "Location": "Limburg",
+    "Year": 1564,
+    "FamousFor": "Bekend om zijn dienstbaarheid en moed op het slagveld",
+    "Remarks": "Opgeklommen van schildknaap tot een gewaardeerde krijger"
+  },
+  {
+    "Id": 7,
+    "CastleId": 6,
+    "Name": "Prince Consort Ralf",
+    "BirthDate": "20-05-1390",
+    "DeathDate": "15-09-1456",
+    "Location": "Limburg",
+    "Year": 1432,
+    "FamousFor": "Bekend om zijn steun aan de kunsten en zijn liefdadigheidswerk",
+    "Remarks": "Echtgenoot van een koningin en beschermheer van vele kunstenaars"
+  },
+  {
+    "Id": 8,
+    "CastleId": 7,
+    "Name": "Count Gifartus",
+    "BirthDate": "12-12-1467",
+    "DeathDate": "08-05-1534",
+    "Location": "Limburg",
+    "Year": 1500,
+    "FamousFor": "Bekend om zijn militaire strategieën en overwinningen",
+    "Remarks": "Een van de machtigste edelen van zijn tijd"
+  },
+  {
+    "Id": 9,
+    "CastleId": 8,
+    "Name": "Squire Hewelet",
+    "BirthDate": "05-09-1185",
+    "DeathDate": "21-03-1250",
+    "Location": "Limburg",
+    "Year": 1223,
+    "FamousFor": "Bekend om zijn trouw en loyaliteit aan zijn heer",
+    "Remarks": "Begon als schildknaap en werd later ridder"
+  },
+  {
+    "Id": 10,
+    "CastleId": 9,
+    "Name": "Grand Duke Launce",
+    "BirthDate": "18-03-1610",
+    "DeathDate": "05-11-1682",
+    "Location": "Limburg",
+    "Year": 1674,
+    "FamousFor": "Bekend om zijn verfijnde smaak voor kunst en cultuur",
+    "Remarks": "Ondersteunde vele kunstenaars en intellectuelen aan zijn hof"
+  },
+  {
+    "Id": 11,
+    "CastleId": 14,
+    "Name": "Duke Iscaac",
+    "BirthDate": "25-08-1298",
+    "DeathDate": "12-06-1356",
+    "Location": "Noord-Brabant",
+    "Year": 1324,
+    "FamousFor": "Bekend om zijn militaire vaardigheden en moed op het slagveld",
+    "Remarks": "Verdiende zijn titel na dapperheid in de strijd"
+  },
+  {
+    "Id": 12,
+    "CastleId": 11,
+    "Name": "Peasant Ernoul",
+    "BirthDate": "08-04-1585",
+    "DeathDate": "03-12-1660",
+    "Location": "Limburg",
+    "Year": 1634,
+    "FamousFor": "Bekend om zijn harde werk en innovatieve landbouwtechnieken",
+    "Remarks": "Van een eenvoudige boer tot een welvarende landbouwer"
+  },
+  {
+    "Id": 13,
+    "CastleId": 12,
+    "Name": "Vicar Gervesot",
+    "BirthDate": "02-06-1480",
+    "DeathDate": "20-10-1556",
+    "Location": "Limburg",
+    "Year": 1534,
+    "FamousFor": "Bekend om zijn toewijding aan zijn parochianen",
+    "Remarks": "Een geestelijke die geliefd was bij zijn gemeenschap"
+  },
+  {
+    "Id": 14,
+    "CastleId": 13,
+    "Name": "Margrave Rainald",
+    "BirthDate": "10-09-1876",
+    "DeathDate": "05-03-1955",
+    "Location": "Limburg",
+    "Year": 1938,
+    "FamousFor": "Bekend om zijn filantropische inspanningen en liefdadigheidswerk",
+    "Remarks": "Een edele met een groot hart voor zijn medemens"
+  },
+  {
+    "Id": 15,
+    "CastleId": 13,
+    "Name": "Serf Jem",
+    "BirthDate": "20-02-1930",
+    "DeathDate": "15-07-1978",
+    "Location": "Limburg",
+    "Year": 1953,
+    "FamousFor": "Bekend om zijn vaardigheden als ambachtsman",
+    "Remarks": "Een hardwerkende horige met uitzonderlijke ambachtelijke talenten"
+  }
+]
