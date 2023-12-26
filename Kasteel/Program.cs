@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<KasteelContext>(opt => opt.UseInMemoryDatabase("kasteel"));
 builder.Services.AddScoped<IKingRepository, KingRepository>();
+builder.Services.AddScoped<ICastleRepository, CastleRepository>();
 
 var app = builder.Build();
 

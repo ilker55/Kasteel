@@ -1,17 +1,31 @@
 ﻿namespace Kasteel.Models
 {
-    public class King(int id, int castleId, string name, string birthDate, string deathDate, string location, int year, string famousFor, string remarks)
+    public class King
     {
-        public int Id { get; set; } = id;
-        public string Name { get; set; } = name;
-        public string BirthDate { get; set; } = birthDate;
-        public string DeathDate { get; set; } = deathDate;
-        public string Location { get; set; } = location;
-        public int Year { get; set; } = year;
-        public string FamousFor { get; set; } = famousFor;
-        public string Remarks { get; set; } = remarks;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string BirthDate { get; set; }
+        public string DeathDate { get; set; }
+        public string Location { get; set; }
+        public int Year { get; set; }
+        public string FamousFor { get; set; }
+        public string Remarks { get; set; }
 
-        public int CastleId { get; set; } = castleId;
+        public int CastleId { get; set; }
         public Castle Castle { get; set; } = null!;
+
+        public King Clone()
+         => new()
+         {
+             Id = Id,
+             Name = Name,
+             BirthDate = BirthDate,
+             DeathDate = DeathDate,
+             Location = Location,
+             Year = Year,
+             FamousFor = FamousFor,
+             Remarks = Remarks,
+             CastleId = CastleId
+         };
     }
 }

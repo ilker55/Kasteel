@@ -13,6 +13,13 @@ namespace Kasteel.DAL
         {
             base.OnModelCreating(modelBuilder);
 
+            //// Relationships
+            //modelBuilder.Entity<King>()
+            //    .HasOne(e => e.Castle)
+            //    .WithMany(e => e.Kings)
+            //    .HasForeignKey(e => e.CastleId)
+            //    .IsRequired();
+
             // Seed database
             modelBuilder.Entity<Castle>().HasData(GetCastleSeedData());
             modelBuilder.Entity<King>().HasData(GetKingSeedData());
@@ -21,13 +28,13 @@ namespace Kasteel.DAL
         private static Castle[] GetCastleSeedData()
         {
             using var r = new StreamReader("Files/kasteel.json");
-            return JsonConvert.DeserializeObject<Castle[]>(r.ReadToEnd()) ?? Array.Empty<Castle>();
+            return JsonConvert.DeserializeObject<Castle[]>(r.ReadToEnd()) ?? [];
         }
 
         private static King[] GetKingSeedData()
         {
             using var r = new StreamReader("Files/koning.json");
-            return JsonConvert.DeserializeObject<King[]>(r.ReadToEnd()) ?? Array.Empty<King>();
+            return JsonConvert.DeserializeObject<King[]>(r.ReadToEnd())?.Select(x => x.Clone()).ToArray() ?? [];
         }
     }
 }

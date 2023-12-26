@@ -1,8 +1,10 @@
 ﻿namespace Kasteel.Models
 {
-    public class Castle(int id, string name)
+    public class Castle
     {
-        public int Id { get; set; } = id;
-        public string Name { get; set; } = name;
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public virtual ICollection<King> Kings { get; set; } = new List<King>();
     }
 }

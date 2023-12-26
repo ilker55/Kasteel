@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using Kasteel.DAL;
 using Kasteel.Models;
 
@@ -12,7 +6,7 @@ namespace Kasteel.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class KingsController(KingRepository repository) : ControllerBase
+    public class KingsController(IKingRepository repository) : ControllerBase
     {
         private readonly IKingRepository _repository = repository;
 
