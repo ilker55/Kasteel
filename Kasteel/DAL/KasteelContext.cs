@@ -1,4 +1,4 @@
-﻿using Kasteel.Models;
+using Kasteel.Models;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -12,13 +12,6 @@ namespace Kasteel.DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            //// Relationships
-            //modelBuilder.Entity<King>()
-            //    .HasOne(e => e.Castle)
-            //    .WithMany(e => e.Kings)
-            //    .HasForeignKey(e => e.CastleId)
-            //    .IsRequired();
 
             // Seed database
             modelBuilder.Entity<Castle>().HasData(GetCastleSeedData());
@@ -34,7 +27,7 @@ namespace Kasteel.DAL
         private static King[] GetKingSeedData()
         {
             using var r = new StreamReader("Files/koning.json");
-            return JsonConvert.DeserializeObject<King[]>(r.ReadToEnd())?.Select(x => x.Clone()).ToArray() ?? [];
+            return JsonConvert.DeserializeObject<King[]>(r.ReadToEnd()) ?? [];
         }
     }
 }

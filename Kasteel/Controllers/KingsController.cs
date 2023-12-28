@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Kasteel.DAL;
 using Kasteel.Models;
 
@@ -34,15 +34,7 @@ namespace Kasteel.Controllers
                 return BadRequest();
 
             _repository.Update(king);
-
-            try
-            {
-                await _repository.Save();
-            }
-            catch (Exception)
-            {
-                return NotFound();
-            }
+            await _repository.Save();
 
             return NoContent();
         }
@@ -62,8 +54,7 @@ namespace Kasteel.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteKing(int id)
         {
-            var deleted = await _repository.Delete(id);
-            if (!deleted)
+            if (!await _repository.Delete(id))
                 return NotFound();
 
             await _repository.Save();

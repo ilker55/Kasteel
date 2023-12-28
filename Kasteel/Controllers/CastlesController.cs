@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Kasteel.DAL;
 using Kasteel.Models;
 
@@ -33,9 +33,7 @@ namespace Kasteel.Controllers
         public async Task<IActionResult> PutCastle(int id, Castle castle)
         {
             if (id != castle.Id)
-            {
                 return BadRequest();
-            }
 
             _repository.Update(castle);
             await _repository.Save();
