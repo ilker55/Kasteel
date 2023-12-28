@@ -1,6 +1,6 @@
 ﻿using Kasteel.Models;
 
-namespace Kasteel.DAL
+namespace Kasteel.DAL.Interfaces
 {
     public interface ICastleRepository : ICrudRepository<Castle>
     {

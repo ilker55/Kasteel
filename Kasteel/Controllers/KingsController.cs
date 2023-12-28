@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
-using Kasteel.DAL;
+﻿using Microsoft.AspNetCore.Mvc;
 using Kasteel.Models;
+using Kasteel.DAL.Interfaces;
 
 namespace Kasteel.Controllers
 {

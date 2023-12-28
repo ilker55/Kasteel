@@ -1,4 +1,5 @@
-﻿using Kasteel.Models;
+﻿using Kasteel.DAL.Interfaces;
+using Kasteel.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kasteel.DAL
@@ -14,10 +15,14 @@ namespace Kasteel.DAL
         }
 
         public Task<List<King>> GetAll()
-            => context.Kings.ToListAsync();
+            => context.Kings
+                .Include(i => i.Castle)
+                .ToListAsync();
 
-        public ValueTask<King?> GetByID(int id)
-            => context.Kings.FindAsync(id);
+        public Task<King?> GetByID(int id)
+            => context.Kings
+                .Include(i => i.Castle)
+                .FirstOrDefaultAsync(x => x.Id == id);
 
         public async Task Insert(King model)
             => await context.Kings.AddAsync(model);
